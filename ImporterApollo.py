@@ -38,7 +38,7 @@ if st.button('Search'):
     }
 
     # Making the POST request
-    url = "https://api.apollo.io/v1/mixed_people/search"
+    url = "https://api.apollo.io/v1/mixed_people/search?=api_key={api_key}"
     response = requests.post(url, headers=headers, json=data)
 
     # Checking if the request was successful
