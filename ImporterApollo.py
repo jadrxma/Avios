@@ -8,7 +8,7 @@ st.title('Apollo API Search Interface')
 st.sidebar.header('API Parameters')
 
 # Using st.secrets for securely handling the API key
-api_key = "VCAi5UbXkjWtJya9yxtviQ"
+api_key = st.secrets["VCAi5UbXkjWtJya9yxtviQ"]
 # Other parameters for the API request
 domains = st.sidebar.text_area('Organization Domains (separate by newline)', 'apollo.io\ngoogle.com')
 page = st.sidebar.number_input('Page', min_value=1, value=1)
